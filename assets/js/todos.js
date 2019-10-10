@@ -12,7 +12,7 @@ $('ul').on('click','span', function (event) {
 });
 
 //Add new Todo
-$('input[type = text]').keypress(function (event){  
+$('input[type = text]').keypress(function(event){  
   console.log('Key press');
   if (event.which === 13){
     //grabbing todo text from input
