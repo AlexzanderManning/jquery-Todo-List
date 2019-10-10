@@ -1,3 +1,8 @@
+:root{
+	font-size: 1em;
+	box-sizing: border-box;
+}
+
 body {
 	font-family: Roboto;
   background: #d53369;  /* fallback for old browsers */
@@ -11,76 +16,122 @@ ul {
 	padding: 0;
 }
 
-
 h1 {
-	background: rgb(212, 59, 105);
-	color: white;
-	margin: 0;
-	padding: 10px 20px;
-	text-transform: uppercase;
-	font-size: 24px;
-	font-weight: normal;
+		background: rgb(212, 59, 105);
+		color: white;
+		margin: 0;
+		padding: 1rem 2rem;
+		text-transform: uppercase;
+		font-size: 6rem;
+		font-weight: normal;
+}
+
+@media(min-width:1024px){
+	h1 {
+		padding: .55rem 1.4rem;
+		font-size: 2rem;
+	}
 }
 
 .fa-plus {
 	float: right;
 }
 
-
-
-
-li {
+li{
+	font-size: 3.5rem;
 	background: #fff;
-	height: 40px;
-	line-height: 40px;
+	height: 7rem;
+	line-height: 7rem;
 	color: #666;
+}
+
+@media(min-width: 1024px){
+	li {
+		font-size: 1.5rem;
+		background: #fff;
+		height: 2.5rem;
+		line-height: 2.5rem;
+	}
 }
 
 li:nth-child(2n){
 	background: #f7f7f7;
 }
 
-span {
+span{
 	background: #e74c3c;
-	height: 40px;
-	margin-right: 20px;
-	text-align: center;
-	color: white;
-	width: 0;
-	display: inline-block;
-	transition: 0.2s linear;
-	opacity: 0;
+		height: 7rem;
+		margin-right: 2rem;
+		text-align: center;
+		color: white;
+		width: 0;
+		display: inline-block;
+		transition: 0.2s linear;
+		opacity: 0;
+}
+
+@media(min-width:1024px){
+	span {
+		height: 2.5rem;
+	}
 }
 
 li:hover span {
-	width: 50px;
+	width: 8rem;
 	opacity: 1.0;
 }
 
+@media(min-width:1024px){
+	li:hover span {
+		width: 3.5rem;
+	}
+}
+
 input {
-	font-size: 18px;
+	font-size: 3.5rem;
 	color: rgb(212, 59, 105);
 	background-color: #f7f7f7;
 	width: 100%;
-	padding: 13px 13px 13px 20px;
+	padding: 1rem 1rem 1rem 1rem;
 	box-sizing: border-box;
 	border: 3px solid rgba(0,0,0,0);
 }
 
+@media(min-width:1024px){
+	input {
+		font-size: 1.3rem;
+		padding: 13px 13px 13px 20px;
+		box-sizing: border-box;
+	}
+}
+
 input:focus{
 	background: #fff;
-	border: 3px solid rgb(204, 169, 109);
+	border: .5rem solid rgb(204, 169, 109);
 	outline: none;
 }
 
+@media(min-width:1024px){
+	input:focus{
+		border: 3px solid rgb(204, 169, 109);
+	}
+}
+
 #container {
-	width: 360px;
-	margin: 100px auto;
+	width: 95%;
+	margin: 10% auto;
 	background: #f7f7f7;
-	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+	box-shadow: 0 0 100px rgba(243, 241, 241, .9);
+}
+
+@media(min-width:1024px){
+	#container {
+		width: 50%;
+		margin: 100px auto;
+	}
 }
 
 .completed {
 	color: gray;
-	text-decoration: line-through;
-} 
+	text-decoration: line-through 
+}
